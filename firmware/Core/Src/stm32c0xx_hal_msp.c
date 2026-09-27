@@ -221,3 +221,16 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
+
+void HAL_ADC_MspInit(ADC_HandleTypeDef *hadc)
+{
+  if (hadc->Instance == ADC1) {
+    __HAL_RCC_ADC_CLK_ENABLE();
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    GPIO_InitTypeDef gpio = {0};
+    gpio.Pin = GPIO_PIN_0;
+    gpio.Mode = GPIO_MODE_ANALOG;
+    gpio.Pull = GPIO_NOPULL;
+    HAL_GPIO_Init(GPIOA, &gpio);
+  }
+}
