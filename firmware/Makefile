@@ -36,6 +36,8 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Logic/event_log.c \
+Logic/impact.c \
 Sensors/mpu6050.c \
 Board/board.c \
 Board/runtime.c \
