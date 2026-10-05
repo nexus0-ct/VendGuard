@@ -36,6 +36,7 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Logic/controller.c \
 Logic/event_log.c \
 Logic/impact.c \
 Sensors/mpu6050.c \
