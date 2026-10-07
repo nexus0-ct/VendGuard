@@ -22,6 +22,7 @@
 #include "stm32c0xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "board.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -156,4 +157,8 @@ void EXTI4_15_IRQHandler(void)
 
 /* USER CODE BEGIN 1 */
 
+/* USER CODE END 1 */
+
+/* USER CODE BEGIN 1 */
+void USART2_IRQHandler(void) { board_console_irq(); }
 /* USER CODE END 1 */

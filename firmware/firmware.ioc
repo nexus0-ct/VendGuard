@@ -167,3 +167,5 @@ ADC1.ClockPrescaler=ADC_CLOCK_SYNC_PCLK_DIV4
 ADC1.SamplingTimeCommon1=ADC_SAMPLETIME_160CYCLES_5
 ADC1.SamplingTimeCommon2=ADC_SAMPLETIME_160CYCLES_5
 ADC1.IPParameters=ClockPrescaler,SamplingTimeCommon1,SamplingTimeCommon2,Channel-0\#ChannelRegularConversion,Rank-0\#ChannelRegularConversion,SamplingTime-0\#ChannelRegularConversion
+
+NVIC.USART2_IRQn=true\:1\:0\:false\:false\:true\:true\:true\:true

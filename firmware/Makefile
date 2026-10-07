@@ -202,3 +202,6 @@ clean:
 -include $(wildcard $(BUILD_DIR)/*.d)
 
 # *** EOF ***
+
+# Keep warnings strict for application code without modifying ST sources.
+$(addprefix $(BUILD_DIR)/,board.o runtime.o mpu6050.o event_log.o impact.o controller.o): CFLAGS += -Wextra -Werror
