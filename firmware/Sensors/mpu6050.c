@@ -3,7 +3,6 @@
 static mpu_result_t translate(bus_result_t result)
 {
   switch (result) {
-    case BUS_OK: return MPU_OK;
     case BUS_NACK: return MPU_NACK;
     case BUS_TIMEOUT: return MPU_TIMEOUT;
     default: return MPU_IO_ERROR;

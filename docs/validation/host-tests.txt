@@ -1,0 +1,19 @@
+mkdir -p build/Darwin-arm64
+cc -std=c11 -O0 -g -Wall -Wextra -Werror -I../firmware/Logic -I../firmware/Sensors test_vendguard.c ../firmware/Logic/controller.c ../firmware/Logic/event_log.c ../firmware/Logic/impact.c ../firmware/Sensors/mpu6050.c -o build/Darwin-arm64/test
+./build/Darwin-arm64/test
+PASS: test_driver
+PASS: test_raw_units
+PASS: test_calibration
+PASS: test_rest_noise
+PASS: test_impact_boundaries
+PASS: test_step_threshold
+PASS: test_pir
+PASS: test_light_guard
+PASS: test_light_exact_timing
+PASS: test_modes
+PASS: test_simultaneous
+PASS: test_fault_recovery
+PASS: test_adc_fault
+PASS: test_wrap
+PASS: test_journal
+PASS: 15 groups cover FR-02 through FR-09, driver units and bus failures

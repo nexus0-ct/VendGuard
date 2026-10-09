@@ -1,0 +1,15 @@
+{
+  "source_sha256": "8afee005a12458842d6f63b05fd8499a5d4e8ebf709f71049924861fbdfbdb34",
+  "uart_bytes": 736,
+  "scl_hz": 100000.0,
+  "adc_period_ms": null,
+  "adc_width_us": null,
+  "pir_pulses": []
+}
+0.013521s µBOOT version=2 mode=guard
+0.019604s VG CHECK device=MPU6050 addr=0x68 id=0x68 result=OK
+0.025253s VG CHECK device=LDR_ADC result=READABLE counts=3938
+0.030614s VG CHECK device=PIR result=READABLE level=0
+0.035277s VG READY imu_hz=100 light_hz=50 pir_hz=200 log=64 commands=guard,service,status,probe,mpu68,mpu69,calibrate,journal
+1.032085s VG EVENT seq=1 ms=1118 category=INFO source=LDR_ADC event=LIGHT_READY value=3938
+1.061833s VG EVENT seq=2 ms=1148 category=INFO source=MPU6050 event=BACKGROUND_READY value=100

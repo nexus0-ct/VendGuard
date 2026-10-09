@@ -79,15 +79,15 @@ register_bus_t board_bus(void)
 }
 bool board_light(uint16_t *counts)
 {
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(ADC_SAMPLE_GPIO_Port, ADC_SAMPLE_Pin, GPIO_PIN_SET);
   HAL_StatusTypeDef status = HAL_ADC_Start(&hadc1);
   if (status == HAL_OK) status = HAL_ADC_PollForConversion(&hadc1, 2);
   if (status == HAL_OK) *counts = (uint16_t)HAL_ADC_GetValue(&hadc1);
   HAL_ADC_Stop(&hadc1);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(ADC_SAMPLE_GPIO_Port, ADC_SAMPLE_Pin, GPIO_PIN_RESET);
   return status == HAL_OK;
 }
-bool board_customer(void) { return HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10) == GPIO_PIN_SET; }
+bool board_customer(void) { return HAL_GPIO_ReadPin(PIR_GPIO_Port, PIR_Pin) == GPIO_PIN_SET; }
 void board_console_start(void)
 {
   HAL_NVIC_SetPriority(USART2_IRQn, 1, 0);

@@ -57,18 +57,18 @@ void controller_light(controller_t *c, uint32_t now, bool valid, uint16_t counts
     }
     return;
   }
-  /* Q4 state keeps fractional counts; one-quarter low-pass update. */
+  /* Quarter-count units preserve precision during the low-pass update. */
   c->filtered_q4 += ((int32_t)counts * 4 - c->filtered_q4) / 4;
   int32_t delta = c->light_background - c->filtered_q4 / 4;
   if (!c->light_open) {
-    if (delta >= 600) {
+    if (delta >= 600 && c->light_background - (int32_t)counts >= 600) {
       if (!c->light_candidate) { c->light_candidate = true; c->candidate_since = now; }
       if ((uint32_t)(now - c->candidate_since) >= 400U) {
         c->light_open = true; c->light_candidate = false; access_event(c, now);
       }
     } else c->light_candidate = false;
   } else {
-    if (delta <= 300) {
+    if (delta <= 300 && c->light_background - (int32_t)counts <= 300) {
       if (!c->dark_candidate) { c->dark_candidate = true; c->dark_since = now; }
       if ((uint32_t)(now - c->dark_since) >= 400U) { c->light_open = false; c->dark_candidate = false; }
     } else c->dark_candidate = false;
