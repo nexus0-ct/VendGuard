@@ -1,0 +1,2313 @@
+{
+  "statistics": {
+    "source_sha256": "56b869e9919c41495df4bcb00c1180b2f8e8a17f8376541ad21ee4fbc97004f3",
+    "uart_bytes": 418,
+    "scl_hz": 100000.0,
+    "adc_period_ms": 19.99335,
+    "adc_width_us": 71.175,
+    "pir_pulses": []
+  },
+  "uart_lines": [
+    {
+      "ns": 15385925,
+      "text": "VG EVENT seq=6 ms=105845 category=INFO source=PIR event=CUSTOMER_DETECTED value=1"
+    },
+    {
+      "ns": 25794200,
+      "text": "VG EVENT seq=7 ms=105854 category=ALARM source=MPU6050 event=IMPACT_ALARM value=638401"
+    },
+    {
+      "ns": 297588800,
+      "text": "VG STATUS ms=106126 mode=guard pir=1 adc=1024 adc_ok=1 imu=OK ax=0 ay=0 az=1799 calibrated=1 alarms=2 records=7 overwritten=0"
+    },
+    {
+      "ns": 309637175,
+      "text": "VG HEARTBEAT ms=106126"
+    },
+    {
+      "ns": 433749700,
+      "text": "VG EVENT seq=8 ms=106262 category=ALARM source=LDR_ADC event=SERVICE_OPEN_SUSPECTED value=2907"
+    }
+  ],
+  "i2c": [
+    {
+      "start_ns": 8840575,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 9087575,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 9097100,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 9742100,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 22979950,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 23226200,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 246.25
+    },
+    {
+      "start_ns": 23235725,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 23880725,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 33942425,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 34189425,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 34198950,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 34843950,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 43847825,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 44094825,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 44104350,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 44749350,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 53842375,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 54089375,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 54098900,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 54743900,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 63841175,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 64088175,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 64097700,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 64742700,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 73835700,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 74082700,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 74092225,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 74737225,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 83834500,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 84081500,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 84091025,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 84736025,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 93846800,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 94093800,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 94103325,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 94748325,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 103845575,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 104092575,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 104102100,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 104747100,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 113840125,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 114087125,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 114096650,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 114741650,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 123838925,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 124085925,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 124095450,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 124740450,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 133833450,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 134080450,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 134089975,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 134734975,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 143850000,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 144097000,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 144106525,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 144751525,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 153844550,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 154091550,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 154101075,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 154746075,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 163843325,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 164090325,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 164099850,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 164744850,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 173837625,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 174084625,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 174094150,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 174739150,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 183836425,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 184083425,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 184092950,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 184737950,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 193848700,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 194095700,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 194105225,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 194750225,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 203847500,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 204094500,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 204104025,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 204749025,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 213842050,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 214089050,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 214098575,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 214743575,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 223840825,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 224087825,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 224097350,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 224742350,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 233835375,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 234082375,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 234091900,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 234736900,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 243834175,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 244081175,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 244090700,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 244735700,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 253846450,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 254093450,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 254102975,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 254747975,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 263845250,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 264092250,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 264101775,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 264746775,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 273839550,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 274086550,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 274096075,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 274741075,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 283838325,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 284085325,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 284094850,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 284739850,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 293832875,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 294079875,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 294089400,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 294734400,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 311812825,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 312058575,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 245.75
+    },
+    {
+      "start_ns": 312068100,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 312713100,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 320831575,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 321078575,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 321088100,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 321733100,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 330843850,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 331090850,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 331100375,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 331745375,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 340842650,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 341089650,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 341099175,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 341744175,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 350837200,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 351084200,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 351093725,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 351738725,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 360835975,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 361082975,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 361092500,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 361737500,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 370830525,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 371077525,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 371087050,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 371732050,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 380829325,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 381076325,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 381085850,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 381730850,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 390841600,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 391088600,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 391098125,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 391743125,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 400840400,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 401087400,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 401096925,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 401741925,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 410834950,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 411081950,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 411091475,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 411736475,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 420833725,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 421080725,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 421090250,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 421735250,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 430828275,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 431075275,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 431084800,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 431729800,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 442534125,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 442780375,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 246.25
+    },
+    {
+      "start_ns": 442792275,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 443437275,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        115,
+        51
+      ],
+      "duration_us": 645.0
+    }
+  ]
+}

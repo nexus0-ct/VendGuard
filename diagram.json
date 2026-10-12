@@ -61,7 +61,7 @@
       "left": -230,
       "attrs": {
         "bufferSize": "10000000",
-        "channelNames": "SCL,SDA,UART_TX,PIR,ADC_SAMPLE"
+        "channelNames": "SCL,SDA,UART_TX,PIR,ADC_SAMPLE,UART_RX"
       }
     }
   ],
@@ -201,6 +201,12 @@
     [
       "capture:D4",
       "nucleo:PA4",
+      "gray",
+      []
+    ],
+    [
+      "capture:D5",
+      "nucleo:PA3",
       "gray",
       []
     ]

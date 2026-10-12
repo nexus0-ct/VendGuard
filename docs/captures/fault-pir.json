@@ -1,0 +1,54 @@
+{
+  "statistics": {
+    "source_sha256": "b05641d38c40c8345be81a0ac7d0172cf94ae0202170abac1cbc179f61d78da3",
+    "uart_bytes": 416,
+    "scl_hz": 100000.0,
+    "adc_period_ms": 19.996325,
+    "adc_width_us": 71.175,
+    "pir_pulses": [
+      {
+        "start_ns": 7527050,
+        "width_ms": 1000.000025
+      }
+    ]
+  },
+  "uart_lines": [
+    {
+      "ns": 9738775,
+      "text": "VG EVENT seq=4 ms=40308 category=INFO source=PIR event=CUSTOMER_DETECTED value=1"
+    },
+    {
+      "ns": 304904375,
+      "text": "VG STATUS ms=40602 mode=guard pir=1 adc=3938 adc_ok=1 imu=NACK ax=0 ay=0 az=1000 calibrated=0 alarms=0 records=4 overwritten=0"
+    },
+    {
+      "ns": 368259050,
+      "text": "VG CHECK device=MPU6050 addr=0x69 id=0x00 result=NACK"
+    },
+    {
+      "ns": 804888200,
+      "text": "VG STATUS ms=41102 mode=guard pir=1 adc=3938 adc_ok=1 imu=NACK ax=0 ay=0 az=1000 calibrated=0 alarms=0 records=4 overwritten=0"
+    },
+    {
+      "ns": 817006150,
+      "text": "VG HEARTBEAT ms=41102"
+    }
+  ],
+  "i2c": [
+    {
+      "start_ns": 367205325,
+      "bytes": [
+        210
+      ],
+      "acks": [
+        false
+      ],
+      "end_ns": 367310325,
+      "ending": "STOP",
+      "address": 105,
+      "read": false,
+      "data": [],
+      "duration_us": 105.0
+    }
+  ]
+}

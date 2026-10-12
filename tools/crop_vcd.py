@@ -15,4 +15,6 @@ for line in body.splitlines():
  elif len(line)>1 and line[0] in '01xz':
   states[line[1:]]=line[0]
   if t>=begin:out.append(line)
+# Keep the observation end so VCD readers flush the final transition.
+out.append('#'+str(end-begin))
 Path(dst).write_text(head+'\n'.join(out)+'\n')

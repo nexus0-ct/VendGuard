@@ -1,0 +1,11 @@
+uart-1: Start bit
+uart-1: 0
+uart-1: 0
+uart-1: 0
+uart-1: 1
+uart-1: 1
+uart-1: 1
+uart-1: 1
+uart-1: 1
+uart-1: F8
+uart-1: Stop bit
