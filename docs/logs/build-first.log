@@ -1,0 +1,175 @@
+docker build -t stm32c0-wokwi-build:local docker
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 331B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ubuntu:22.04
+#2 DONE 2.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/3] FROM docker.io/library/ubuntu:22.04@sha256:b1066385161d28ddf6bc7e7b28a9170eec11484c821d1a5150d176cbde41d7f7
+#4 resolve docker.io/library/ubuntu:22.04@sha256:b1066385161d28ddf6bc7e7b28a9170eec11484c821d1a5150d176cbde41d7f7 done
+#4 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 0B / 27.68MB 0.2s
+#4 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 5.24MB / 27.68MB 0.5s
+#4 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 12.58MB / 27.68MB 0.6s
+#4 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 14.68MB / 27.68MB 0.8s
+#4 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 22.02MB / 27.68MB 0.9s
+#4 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 25.17MB / 27.68MB 1.1s
+#4 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 27.68MB / 27.68MB 1.1s done
+#4 extracting sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136
+#4 extracting sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 0.3s done
+#4 DONE 1.4s
+
+#5 [2/3] RUN apt-get update && apt-get install -y --no-install-recommends     make     gcc-arm-none-eabi     binutils-arm-none-eabi     libnewlib-arm-none-eabi     ca-certificates     && rm -rf /var/lib/apt/lists/*
+#5 0.281 Get:1 http://ports.ubuntu.com/ubuntu-ports jammy InRelease [270 kB]
+#5 0.596 Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease [128 kB]
+#5 0.662 Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-backports InRelease [127 kB]
+#5 0.726 Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-security InRelease [129 kB]
+#5 0.795 Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/multiverse arm64 Packages [224 kB]
+#5 0.890 Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 Packages [1758 kB]
+#5 1.043 Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 Packages [17.2 MB]
+#5 1.662 Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/restricted arm64 Packages [24.2 kB]
+#5 1.662 Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/restricted arm64 Packages [8296 kB]
+#5 2.014 Get:10 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 Packages [1712 kB]
+#5 2.105 Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/multiverse arm64 Packages [70.2 kB]
+#5 2.107 Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 Packages [4558 kB]
+#5 2.468 Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-backports/main arm64 Packages [82.5 kB]
+#5 2.468 Get:14 http://ports.ubuntu.com/ubuntu-ports jammy-backports/universe arm64 Packages [33.7 kB]
+#5 2.468 Get:15 http://ports.ubuntu.com/ubuntu-ports jammy-security/multiverse arm64 Packages [63.4 kB]
+#5 2.468 Get:16 http://ports.ubuntu.com/ubuntu-ports jammy-security/main arm64 Packages [4208 kB]
+#5 2.651 Get:17 http://ports.ubuntu.com/ubuntu-ports jammy-security/universe arm64 Packages [1416 kB]
+#5 2.708 Get:18 http://ports.ubuntu.com/ubuntu-ports jammy-security/restricted arm64 Packages [7930 kB]
+#5 3.340 Fetched 48.2 MB in 3s (14.9 MB/s)
+#5 3.340 Reading package lists...
+#5 4.156 Reading package lists...
+#5 4.715 Building dependency tree...
+#5 4.855 Reading state information...
+#5 4.996 The following additional packages will be installed:
+#5 4.996   libisl23 libmpc3 libmpfr6 libnewlib-dev openssl
+#5 4.997 Suggested packages:
+#5 4.997   libnewlib-doc make-doc
+#5 4.997 Recommended packages:
+#5 4.997   libstdc++-arm-none-eabi-newlib
+#5 5.033 The following NEW packages will be installed:
+#5 5.033   binutils-arm-none-eabi ca-certificates gcc-arm-none-eabi libisl23 libmpc3
+#5 5.033   libmpfr6 libnewlib-arm-none-eabi libnewlib-dev make openssl
+#5 5.173 0 upgraded, 10 newly installed, 0 to remove and 1 not upgraded.
+#5 5.173 Need to get 95.7 MB of archives.
+#5 5.173 After this operation, 848 MB of additional disk space will be used.
+#5 5.173 Get:1 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 openssl arm64 3.0.2-0ubuntu1.30 [1160 kB]
+#5 5.609 Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 ca-certificates all 20260601~22.04.1 [141 kB]
+#5 5.613 Get:3 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libisl23 arm64 0.24-2build1 [689 kB]
+#5 5.756 Get:4 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmpfr6 arm64 4.1.0-3build3 [245 kB]
+#5 5.765 Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 make arm64 4.3-4.1build1 [177 kB]
+#5 5.765 Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 binutils-arm-none-eabi arm64 2.38-3ubuntu1+15build1 [3064 kB]
+#5 5.894 Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmpc3 arm64 1.2.1-2build1 [48.1 kB]
+#5 5.896 Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 gcc-arm-none-eabi arm64 15:10.3-2021.07-4 [46.8 MB]
+#5 7.843 Get:9 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libnewlib-dev all 3.3.0-1.3 [137 kB]
+#5 7.847 Get:10 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libnewlib-arm-none-eabi all 3.3.0-1.3 [43.2 MB]
+#5 9.373 debconf: delaying package configuration, since apt-utils is not installed
+#5 9.389 Fetched 95.7 MB in 4s (22.6 MB/s)
+#5 9.397 Selecting previously unselected package openssl.
+#5 9.397 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4387 files and directories currently installed.)
+#5 9.399 Preparing to unpack .../0-openssl_3.0.2-0ubuntu1.30_arm64.deb ...
+#5 9.401 Unpacking openssl (3.0.2-0ubuntu1.30) ...
+#5 9.419 Selecting previously unselected package ca-certificates.
+#5 9.419 Preparing to unpack .../1-ca-certificates_20260601~22.04.1_all.deb ...
+#5 9.420 Unpacking ca-certificates (20260601~22.04.1) ...
+#5 9.434 Selecting previously unselected package libisl23:arm64.
+#5 9.434 Preparing to unpack .../2-libisl23_0.24-2build1_arm64.deb ...
+#5 9.437 Unpacking libisl23:arm64 (0.24-2build1) ...
+#5 9.450 Selecting previously unselected package libmpfr6:arm64.
+#5 9.450 Preparing to unpack .../3-libmpfr6_4.1.0-3build3_arm64.deb ...
+#5 9.451 Unpacking libmpfr6:arm64 (4.1.0-3build3) ...
+#5 9.459 Selecting previously unselected package make.
+#5 9.459 Preparing to unpack .../4-make_4.3-4.1build1_arm64.deb ...
+#5 9.460 Unpacking make (4.3-4.1build1) ...
+#5 9.468 Selecting previously unselected package binutils-arm-none-eabi.
+#5 9.468 Preparing to unpack .../5-binutils-arm-none-eabi_2.38-3ubuntu1+15build1_arm64.deb ...
+#5 9.469 Unpacking binutils-arm-none-eabi (2.38-3ubuntu1+15build1) ...
+#5 9.512 Selecting previously unselected package libmpc3:arm64.
+#5 9.512 Preparing to unpack .../6-libmpc3_1.2.1-2build1_arm64.deb ...
+#5 9.513 Unpacking libmpc3:arm64 (1.2.1-2build1) ...
+#5 9.522 Selecting previously unselected package gcc-arm-none-eabi.
+#5 9.523 Preparing to unpack .../7-gcc-arm-none-eabi_15%3a10.3-2021.07-4_arm64.deb ...
+#5 9.524 Unpacking gcc-arm-none-eabi (15:10.3-2021.07-4) ...
+#5 10.51 Selecting previously unselected package libnewlib-dev.
+#5 10.51 Preparing to unpack .../8-libnewlib-dev_3.3.0-1.3_all.deb ...
+#5 10.51 Unpacking libnewlib-dev (3.3.0-1.3) ...
+#5 10.54 Selecting previously unselected package libnewlib-arm-none-eabi.
+#5 10.54 Preparing to unpack .../9-libnewlib-arm-none-eabi_3.3.0-1.3_all.deb ...
+#5 10.55 Unpacking libnewlib-arm-none-eabi (3.3.0-1.3) ...
+#5 11.77 Setting up binutils-arm-none-eabi (2.38-3ubuntu1+15build1) ...
+#5 11.78 Setting up make (4.3-4.1build1) ...
+#5 11.79 Setting up libmpfr6:arm64 (4.1.0-3build3) ...
+#5 11.79 Setting up libnewlib-dev (3.3.0-1.3) ...
+#5 11.80 Setting up libmpc3:arm64 (1.2.1-2build1) ...
+#5 11.81 Setting up libnewlib-arm-none-eabi (3.3.0-1.3) ...
+#5 11.82 Setting up libisl23:arm64 (0.24-2build1) ...
+#5 11.83 Setting up openssl (3.0.2-0ubuntu1.30) ...
+#5 11.84 Setting up gcc-arm-none-eabi (15:10.3-2021.07-4) ...
+#5 11.84 Setting up ca-certificates (20260601~22.04.1) ...
+#5 12.00 Updating certificates in /etc/ssl/certs...
+#5 12.20 121 added, 0 removed; done.
+#5 12.22 Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+#5 12.23 Processing triggers for ca-certificates (20260601~22.04.1) ...
+#5 12.23 Updating certificates in /etc/ssl/certs...
+#5 12.37 0 added, 0 removed; done.
+#5 12.37 Running hooks in /etc/ca-certificates/update.d...
+#5 12.37 done.
+#5 DONE 12.6s
+
+#6 [3/3] WORKDIR /workspace
+#6 DONE 0.0s
+
+#7 exporting to image
+#7 exporting layers
+#7 exporting layers 10.4s done
+#7 exporting manifest sha256:3626a138f3c92fa65dd3c182cd5f7bbbe1172ce8cc74b8111888766539f18a92 done
+#7 exporting config sha256:fcd1e135b953e07af2bc658b12ef1bf474d68fd92b5625251dc78d87712e117f done
+#7 exporting attestation manifest sha256:0ff68e9e5418c65883c46391b9fe61bdd34ebcb000fcdf3fabe68ee290e80f86 0.0s done
+#7 exporting manifest list sha256:a7ec78a24287527fc59ba6721ca5a07b11f425f82e81bd8b5e10f39be3a91a9a done
+#7 naming to docker.io/library/stm32c0-wokwi-build:local done
+#7 unpacking to docker.io/library/stm32c0-wokwi-build:local
+#7 unpacking to docker.io/library/stm32c0-wokwi-build:local 2.0s done
+#7 DONE 12.5s
+docker run --rm -v "/Users/pliffdax/Projects/university/Study/People/Шостак Богдан/2026-Fall/SP/Lab01/Work/VendGuard:/workspace" -w /workspace \
+		--user "501:20" stm32c0-wokwi-build:local \
+		make -C firmware all
+make: Entering directory '/workspace/firmware'
+mkdir -p build		
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/main.d" -Wa,-a,-ad,-alms=build/main.lst Core/Src/main.c -o build/main.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_it.d" -Wa,-a,-ad,-alms=build/stm32c0xx_it.lst Core/Src/stm32c0xx_it.c -o build/stm32c0xx_it.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_msp.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_msp.lst Core/Src/stm32c0xx_hal_msp.c -o build/stm32c0xx_hal_msp.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/syscalls.d" -Wa,-a,-ad,-alms=build/syscalls.lst Core/Src/syscalls.c -o build/syscalls.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/sysmem.d" -Wa,-a,-ad,-alms=build/sysmem.lst Core/Src/sysmem.c -o build/sysmem.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c -o build/stm32c0xx_hal.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_cortex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_cortex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c -o build/stm32c0xx_hal_cortex.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_rcc.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_rcc.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c -o build/stm32c0xx_hal_rcc.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_rcc_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_rcc_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c -o build/stm32c0xx_hal_rcc_ex.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_flash.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_flash.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c -o build/stm32c0xx_hal_flash.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_flash_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_flash_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c -o build/stm32c0xx_hal_flash_ex.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_gpio.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_gpio.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c -o build/stm32c0xx_hal_gpio.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_dma.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_dma.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c -o build/stm32c0xx_hal_dma.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_dma_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_dma_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c -o build/stm32c0xx_hal_dma_ex.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_pwr.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_pwr.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c -o build/stm32c0xx_hal_pwr.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_pwr_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_pwr_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c -o build/stm32c0xx_hal_pwr_ex.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_exti.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_exti.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c -o build/stm32c0xx_hal_exti.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_i2c.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_i2c.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c -o build/stm32c0xx_hal_i2c.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_i2c_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_i2c_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c_ex.c -o build/stm32c0xx_hal_i2c_ex.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_uart.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_uart.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c -o build/stm32c0xx_hal_uart.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_uart_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_uart_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c -o build/stm32c0xx_hal_uart_ex.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/system_stm32c0xx.d" -Wa,-a,-ad,-alms=build/system_stm32c0xx.lst Core/Src/system_stm32c0xx.c -o build/system_stm32c0xx.o
+arm-none-eabi-gcc -x assembler-with-cpp -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/startup_stm32c031xx.d" startup_stm32c031xx.s -o build/startup_stm32c031xx.o
+arm-none-eabi-gcc build/main.o build/stm32c0xx_it.o build/stm32c0xx_hal_msp.o build/syscalls.o build/sysmem.o build/stm32c0xx_hal.o build/stm32c0xx_hal_cortex.o build/stm32c0xx_hal_rcc.o build/stm32c0xx_hal_rcc_ex.o build/stm32c0xx_hal_flash.o build/stm32c0xx_hal_flash_ex.o build/stm32c0xx_hal_gpio.o build/stm32c0xx_hal_dma.o build/stm32c0xx_hal_dma_ex.o build/stm32c0xx_hal_pwr.o build/stm32c0xx_hal_pwr_ex.o build/stm32c0xx_hal_exti.o build/stm32c0xx_hal_i2c.o build/stm32c0xx_hal_i2c_ex.o build/stm32c0xx_hal_uart.o build/stm32c0xx_hal_uart_ex.o build/system_stm32c0xx.o build/startup_stm32c031xx.o -mcpu=cortex-m0plus -mthumb   -specs=nano.specs -TSTM32C031C6Tx_FLASH.ld  -lc -lm -lnosys  -Wl,-Map=build/firmware.map,--cref -Wl,--gc-sections -o build/firmware.elf
+arm-none-eabi-size build/firmware.elf
+   text	   data	    bss	    dec	    hex	filename
+  13464	    120	   1808	  15392	   3c20	build/firmware.elf
+arm-none-eabi-objcopy -O ihex build/firmware.elf build/firmware.hex
+arm-none-eabi-objcopy -O binary -S build/firmware.elf build/firmware.bin	
+make: Leaving directory '/workspace/firmware'
