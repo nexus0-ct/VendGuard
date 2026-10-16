@@ -1,0 +1,24 @@
+name: VendGuard firmware and tests
+on:
+  push:
+    branches: [main, feature/lab-2]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-and-test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Build STM32 firmware
+        run: make build
+      - name: Host tests and architecture checks
+        run: docker run --rm -v "$PWD:/workspace" -w /workspace stm32c0-wokwi-build:local make test
+      - name: Address and undefined behavior sanitizers
+        run: docker run --rm -v "$PWD:/workspace" -w /workspace stm32c0-wokwi-build:local make sanitize
+      - name: Coverage and thresholds
+        run: |
+          docker run --rm -v "$PWD:/workspace" -w /workspace stm32c0-wokwi-build:local make coverage
+          python3 tools/check_coverage.py tests/coverage/Linux-x86_64

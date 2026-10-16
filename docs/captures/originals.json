@@ -1,0 +1,27 @@
+[
+  {
+    "file": "bringup-register-full.vcd",
+    "bytes": 13890887,
+    "sha256": "3d03d7d4d22f2b9febb790e84eee0af92e1220595c59f7e9081ef83c2bd8a463"
+  },
+  {
+    "file": "uart-bringup-full.vcd",
+    "bytes": 41833411,
+    "sha256": "20d915261d53b09ccf0f7b7c82c277b13c68debfd2056d18a9473e5ec2090316"
+  },
+  {
+    "file": "customer-service-full.vcd",
+    "bytes": 166720881,
+    "sha256": "b9435eea193354c69ae8737ad6fbfc79965c255e50113bb1272ef1abd1163e65"
+  },
+  {
+    "file": "mechanical-fault-full.vcd",
+    "bytes": 85939336,
+    "sha256": "92ae93b4e43d38efbb4ac5908e5b5d64a8f682e79bbd65091e70f81908db0d74"
+  },
+  {
+    "file": "recovery-full.vcd",
+    "bytes": 26281495,
+    "sha256": "12cb86e811557ae92ad227ab2979d05d8a9c9b3ffeb174eb5a08dc8ea3c0994e"
+  }
+]

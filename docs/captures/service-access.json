@@ -1,0 +1,177 @@
+{
+  "statistics": {
+    "source_sha256": "c82be3e4f1042ce83bbd77713dfea3f7a60649a9ca1f85e30aefc116acede74c",
+    "uart_bytes": 87,
+    "scl_hz": 100000.0,
+    "adc_period_ms": 20.002575,
+    "adc_width_us": 71.175,
+    "pir_pulses": []
+  },
+  "uart_lines": [
+    {
+      "ns": 6624175,
+      "text": "VG EVENT seq=5 ms=302199 category=INFO source=LDR_ADC event=SERVICE_ACCESS value=2907"
+    }
+  ],
+  "i2c": [
+    {
+      "start_ns": 3753000,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 4000000,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 4009525,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 4654525,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 14583125,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 14829500,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 246.375
+    },
+    {
+      "start_ns": 14839025,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 15484025,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 23755575,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 24002575,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 24012100,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 24657100,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "duration_us": 645.0
+    }
+  ]
+}

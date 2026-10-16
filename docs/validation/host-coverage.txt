@@ -1,0 +1,57 @@
+mkdir -p coverage/Darwin-arm64
+rm -f coverage/Darwin-arm64/*.gcda
+cc -std=c11 -O0 -g -Wall -Wextra -Werror -I../firmware/Logic -I../firmware/Sensors --coverage test_vendguard.c ../firmware/Logic/controller.c ../firmware/Logic/event_log.c ../firmware/Logic/impact.c ../firmware/Sensors/mpu6050.c -o coverage/Darwin-arm64/test
+./coverage/Darwin-arm64/test
+PASS: test_driver
+PASS: test_raw_units
+PASS: test_calibration
+PASS: test_rest_noise
+PASS: test_impact_boundaries
+PASS: test_step_threshold
+PASS: test_pir
+PASS: test_light_guard
+PASS: test_light_exact_timing
+PASS: test_modes
+PASS: test_simultaneous
+PASS: test_fault_recovery
+PASS: test_adc_fault
+PASS: test_wrap
+PASS: test_journal
+PASS: 15 groups cover FR-02 through FR-09, driver units and bus failures
+xcrun llvm-cov gcov -b coverage/Darwin-arm64/*.gcno
+File '../firmware/Logic/controller.c'
+Lines executed:100.00% of 63
+Branches executed:100.00% of 46
+Taken at least once:97.83% of 46
+No calls
+Creating 'controller.c.gcov'
+
+File '../firmware/Logic/event_log.c'
+Lines executed:100.00% of 28
+Branches executed:100.00% of 16
+Taken at least once:100.00% of 16
+No calls
+Creating 'event_log.c.gcov'
+
+File '../firmware/Logic/impact.c'
+Lines executed:100.00% of 42
+Branches executed:100.00% of 42
+Taken at least once:95.24% of 42
+No calls
+Creating 'impact.c.gcov'
+
+File '../firmware/Sensors/mpu6050.c'
+Lines executed:100.00% of 40
+Branches executed:100.00% of 22
+Taken at least once:100.00% of 22
+No calls
+Creating 'mpu6050.c.gcov'
+
+File 'test_vendguard.c'
+Lines executed:100.00% of 187
+Branches executed:100.00% of 262
+Taken at least once:60.31% of 262
+No calls
+Creating 'test_vendguard.c.gcov'
+
+mv *.gcov coverage/Darwin-arm64/

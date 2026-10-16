@@ -64,6 +64,10 @@ void Error_Handler(void);
 #define Led_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
+#define PIR_Pin GPIO_PIN_10
+#define PIR_GPIO_Port GPIOA
+#define ADC_SAMPLE_Pin GPIO_PIN_4
+#define ADC_SAMPLE_GPIO_Port GPIOA
 
 /* USER CODE END Private defines */
 

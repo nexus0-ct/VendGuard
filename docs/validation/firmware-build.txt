@@ -1,0 +1,49 @@
+docker build -t stm32c0-wokwi-build:local docker
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 494B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/3] FROM docker.io/library/ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401
+#4 resolve docker.io/library/ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401 done
+#4 DONE 0.0s
+
+#5 [2/3] RUN apt-get update && apt-get install -y --no-install-recommends     make     gcc-arm-none-eabi=15:10.3-2021.07-4     binutils-arm-none-eabi=2.38-3ubuntu1+15build1     libnewlib-arm-none-eabi=3.3.0-1.3     gcc     libc6-dev     python3     ca-certificates     && rm -rf /var/lib/apt/lists/*
+#5 CACHED
+
+#6 [3/3] WORKDIR /workspace
+#6 CACHED
+
+#7 exporting to image
+#7 exporting layers done
+#7 exporting manifest sha256:15df18a7a6fdafe3c8a201fe497d07a3123bcf699abc2ab9891cc3093ddf2140 done
+#7 exporting config sha256:052a61c6f3787cb4bc9a771daeeda5aa40af43f35e94f9adaa639c49d43edd28 done
+#7 exporting attestation manifest sha256:405abb36e28d687364e49690c97749c574423d271b2266d2c5d734e02428d25b done
+#7 exporting manifest list sha256:2614e87836e1c599ed163d45c04017aa68e534cb03a8525aa061df8ae58cfe64 done
+#7 naming to docker.io/library/stm32c0-wokwi-build:local done
+#7 unpacking to docker.io/library/stm32c0-wokwi-build:local done
+#7 DONE 0.0s
+docker run --rm -v "/Users/pliffdax/Projects/university/Study/People/Шостак Богдан/2026-Fall/SP/Lab01/Work/VendGuard:/workspace" -w /workspace \
+		--user "501:20" stm32c0-wokwi-build:local \
+		make -C firmware all
+make: Entering directory '/workspace/firmware'
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IBoard -ISensors -ILogic -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/board.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/board.lst Board/board.c -o build/board.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IBoard -ISensors -ILogic -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/runtime.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/runtime.lst Board/runtime.c -o build/runtime.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IBoard -ISensors -ILogic -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/main.d" -Wa,-a,-ad,-alms=build/main.lst Core/Src/main.c -o build/main.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IBoard -ISensors -ILogic -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_it.d" -Wa,-a,-ad,-alms=build/stm32c0xx_it.lst Core/Src/stm32c0xx_it.c -o build/stm32c0xx_it.o
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IBoard -ISensors -ILogic -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_msp.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_msp.lst Core/Src/stm32c0xx_hal_msp.c -o build/stm32c0xx_hal_msp.o
+arm-none-eabi-gcc build/controller.o build/event_log.o build/impact.o build/mpu6050.o build/board.o build/runtime.o build/stm32c0xx_hal_adc.o build/stm32c0xx_hal_adc_ex.o build/main.o build/stm32c0xx_it.o build/stm32c0xx_hal_msp.o build/syscalls.o build/sysmem.o build/stm32c0xx_hal.o build/stm32c0xx_hal_cortex.o build/stm32c0xx_hal_rcc.o build/stm32c0xx_hal_rcc_ex.o build/stm32c0xx_hal_flash.o build/stm32c0xx_hal_flash_ex.o build/stm32c0xx_hal_gpio.o build/stm32c0xx_hal_dma.o build/stm32c0xx_hal_dma_ex.o build/stm32c0xx_hal_pwr.o build/stm32c0xx_hal_pwr_ex.o build/stm32c0xx_hal_exti.o build/stm32c0xx_hal_i2c.o build/stm32c0xx_hal_i2c_ex.o build/stm32c0xx_hal_uart.o build/stm32c0xx_hal_uart_ex.o build/system_stm32c0xx.o build/startup_stm32c031xx.o -mcpu=cortex-m0plus -mthumb   -specs=nano.specs -TSTM32C031C6Tx_FLASH.ld  -lc -lm -lnosys  -Wl,-Map=build/firmware.map,--cref -Wl,--gc-sections -o build/firmware.elf
+arm-none-eabi-size build/firmware.elf
+   text	   data	    bss	    dec	    hex	filename
+  22444	    120	   3280	  25844	   64f4	build/firmware.elf
+arm-none-eabi-objcopy -O ihex build/firmware.elf build/firmware.hex
+arm-none-eabi-objcopy -O binary -S build/firmware.elf build/firmware.bin	
+make: Leaving directory '/workspace/firmware'

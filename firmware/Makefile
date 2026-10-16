@@ -36,6 +36,14 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Logic/controller.c \
+Logic/event_log.c \
+Logic/impact.c \
+Sensors/mpu6050.c \
+Board/board.c \
+Board/runtime.c \
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c \
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c \
 Core/Src/main.c \
 Core/Src/stm32c0xx_it.c \
 Core/Src/stm32c0xx_hal_msp.c \
@@ -114,6 +122,9 @@ AS_INCLUDES =
 
 # C includes
 C_INCLUDES =  \
+-IBoard \
+-ISensors \
+-ILogic \
 -ICore/Inc \
 -IDrivers/STM32C0xx_HAL_Driver/Inc \
 -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy \
@@ -191,3 +202,6 @@ clean:
 -include $(wildcard $(BUILD_DIR)/*.d)
 
 # *** EOF ***
+
+# Keep warnings strict for application code without modifying ST sources.
+$(addprefix $(BUILD_DIR)/,board.o runtime.o mpu6050.o event_log.o impact.o controller.o): CFLAGS += -Wextra -Werror

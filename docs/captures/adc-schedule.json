@@ -1,0 +1,283 @@
+{
+  "statistics": {
+    "source_sha256": "9325ea6ccff036b71edb8f230b05e724895871ba1f4eaf13653507945944be51",
+    "uart_bytes": 124,
+    "scl_hz": 100000.0,
+    "adc_period_ms": 19.5687,
+    "adc_width_us": 71.175,
+    "pir_pulses": []
+  },
+  "uart_lines": [
+    {
+      "ns": 5547450,
+      "text": "VG STATUS ms=602 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=0 alarms=0 records=0 overwritten=0"
+    }
+  ],
+  "i2c": [
+    {
+      "start_ns": 16896200,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 17142450,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 246.25
+    },
+    {
+      "start_ns": 17151975,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 17796975,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 26032300,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 26279300,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 26288825,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 26933825,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 36026825,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 36273825,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 36283350,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 36928350,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 46035875,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 46282875,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 46292400,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 46937400,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 56030425,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 56277425,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.0
+    },
+    {
+      "start_ns": 56286950,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 56931950,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "duration_us": 645.0
+    }
+  ]
+}

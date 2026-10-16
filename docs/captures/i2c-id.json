@@ -1,0 +1,51 @@
+{
+  "statistics": {
+    "source_sha256": "9b367c1d985d47ceea3aabc40437b63d088a4e46d9cc0b58b2d53dbdab17e578",
+    "uart_bytes": 1,
+    "scl_hz": 100000.0,
+    "adc_period_ms": null,
+    "adc_width_us": null,
+    "pir_pulses": []
+  },
+  "uart_lines": [],
+  "i2c": [
+    {
+      "start_ns": 34075,
+      "bytes": [
+        208,
+        117
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 281575,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        117
+      ],
+      "duration_us": 247.5
+    },
+    {
+      "start_ns": 291100,
+      "bytes": [
+        209,
+        104
+      ],
+      "acks": [
+        true,
+        false
+      ],
+      "end_ns": 486100,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        104
+      ],
+      "duration_us": 195.0
+    }
+  ]
+}

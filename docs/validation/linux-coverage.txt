@@ -1,0 +1,65 @@
+python3 tools/check_layers.py
+PASS: Logic and Sensors compile without board or HAL dependencies
+python3 tools/check_wiring.py
+PASS: Wokwi connections, analyzer channels and .ioc pin assignments agree
+make -C tests coverage GCOV="gcov"
+make[1]: Entering directory '/workspace/tests'
+mkdir -p coverage/Linux-aarch64
+rm -f coverage/Linux-aarch64/*.gcda
+cc -std=c11 -O0 -g -Wall -Wextra -Werror -I../firmware/Logic -I../firmware/Sensors --coverage test_vendguard.c ../firmware/Logic/controller.c ../firmware/Logic/event_log.c ../firmware/Logic/impact.c ../firmware/Sensors/mpu6050.c -o coverage/Linux-aarch64/test
+./coverage/Linux-aarch64/test
+PASS: test_driver
+PASS: test_raw_units
+PASS: test_calibration
+PASS: test_rest_noise
+PASS: test_impact_boundaries
+PASS: test_step_threshold
+PASS: test_pir
+PASS: test_light_guard
+PASS: test_light_exact_timing
+PASS: test_modes
+PASS: test_simultaneous
+PASS: test_fault_recovery
+PASS: test_adc_fault
+PASS: test_wrap
+PASS: test_journal
+PASS: 15 groups cover FR-02 through FR-09, driver units and bus failures
+gcov -b coverage/Linux-aarch64/*.gcno
+File '../firmware/Logic/controller.c'
+Lines executed:100.00% of 56
+Branches executed:100.00% of 48
+Taken at least once:97.92% of 48
+Calls executed:100.00% of 13
+Creating 'controller.c.gcov'
+
+File '../firmware/Logic/event_log.c'
+Lines executed:100.00% of 27
+Branches executed:100.00% of 16
+Taken at least once:100.00% of 16
+Calls executed:100.00% of 1
+Creating 'event_log.c.gcov'
+
+File '../firmware/Logic/impact.c'
+Lines executed:100.00% of 38
+Branches executed:100.00% of 42
+Taken at least once:95.24% of 42
+Calls executed:100.00% of 7
+Creating 'impact.c.gcov'
+
+File '../firmware/Sensors/mpu6050.c'
+Lines executed:100.00% of 34
+Branches executed:100.00% of 22
+Taken at least once:100.00% of 22
+Calls executed:100.00% of 6
+Creating 'mpu6050.c.gcov'
+
+File 'test_vendguard.c'
+Lines executed:100.00% of 181
+Branches executed:100.00% of 272
+Taken at least once:61.76% of 272
+Calls executed:71.19% of 236
+Creating 'test_vendguard.c.gcov'
+
+Lines executed:100.00% of 336
+mv *.gcov coverage/Linux-aarch64/
+make[1]: Leaving directory '/workspace/tests'

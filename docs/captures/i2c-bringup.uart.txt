@@ -1,0 +1,10 @@
+µBOOT version=2 mode=guard
+VG CHECK device=MPU6050 addr=0x68 id=0x68 result=OK
+VG CHECK device=LDR_ADC result=READABLE counts=3938
+VG CHECK device=PIR result=READABLE level=0
+VG READY imu_hz=100 light_hz=50 pir_hz=200 log=64 commands=guard,service,status,probe,mpu68,mpu69,calibrate,journal
+VG STATUS ms=602 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=0 alarms=0 records=0 overwritten=0
+VG STATUS ms=1102 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=0 alarms=0 records=0 overwritten=0
+VG HEARTBEAT ms=1102
+VG EVENT seq=1 ms=1118 category=INFO source=LDR_ADC event=LIGHT_READY value=3938
+VG EVENT seq=2 ms=1148 category=INFO source=MPU6050 event=BACKGROUND_READY value=100

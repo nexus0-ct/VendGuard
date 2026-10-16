@@ -1,0 +1,86 @@
+{
+  "statistics": {
+    "source_sha256": "728ba1f0b946bfc325262335575f20f3205ba41824abccdc1d80e8b1bc31f88f",
+    "uart_bytes": 83,
+    "scl_hz": 100000.0,
+    "adc_period_ms": null,
+    "adc_width_us": null,
+    "pir_pulses": []
+  },
+  "uart_lines": [
+    {
+      "ns": 8842300,
+      "text": "VG CHECK device=MPU6050 addr=0x69 id=0x00 result=NACK"
+    }
+  ],
+  "i2c": [
+    {
+      "start_ns": 6506100,
+      "bytes": [
+        208,
+        59
+      ],
+      "acks": [
+        true,
+        true
+      ],
+      "end_ns": 6753525,
+      "ending": "STOP",
+      "address": 104,
+      "read": false,
+      "data": [
+        59
+      ],
+      "duration_us": 247.425
+    },
+    {
+      "start_ns": 6768575,
+      "bytes": [
+        209,
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "acks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "end_ns": 7413575,
+      "ending": "STOP",
+      "address": 104,
+      "read": true,
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        64,
+        0
+      ],
+      "duration_us": 645.0
+    },
+    {
+      "start_ns": 7788575,
+      "bytes": [
+        210
+      ],
+      "acks": [
+        false
+      ],
+      "end_ns": 7893575,
+      "ending": "STOP",
+      "address": 105,
+      "read": false,
+      "data": [],
+      "duration_us": 105.0
+    }
+  ]
+}
