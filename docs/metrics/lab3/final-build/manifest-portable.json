@@ -241,7 +241,7 @@
       "firmware/build/firmware.bin": "fd780cadea79142ead8b225bdb449c30028de5ea2baa81ac7800b83828b8f0a7",
       "firmware/build/firmware.map": "52a82b9a115b99b932fa05a2d4a6f70671d75f25ddad4677cf886cc8321a6852"
     },
-    "snapshot": "/Users/pliffdax/Projects/university/Study/People/Шостак Богдан/2026-Fall/SP/Lab03/Work/firmware/vg3-eed2dae477f4fd8f-b6681b1a211d",
+    "snapshot": "<локальний-архів-прошивки>/vg3-eed2dae477f4fd8f-b6681b1a211d",
     "notes": [
       "HEAD is the Lab2 base. No commit or tag was created.",
       "This manifest records build/host checks, not MCU or Wokwi execution.",
