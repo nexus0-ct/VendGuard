@@ -56,13 +56,14 @@ ENTRY(Reset_Handler)
 _estack = ORIGIN(RAM) + LENGTH(RAM);    /* end of RAM */
 /* Generate a link error if heap and stack don't fit into RAM */
 _Min_Heap_Size = 0x200;      /* required amount of heap  */
-_Min_Stack_Size = 0x400; /* required amount of stack */
+_Min_Stack_Size = 0x800; /* measured with painting; reserve 2 KiB */
 
 /* Specify the memory areas */
 MEMORY
 {
 RAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 12K
-FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 32K
+FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 28K
+AUDIT (r)       : ORIGIN = 0x8007000, LENGTH = 4K
 }
 
 /* Define output sections */
@@ -140,6 +141,8 @@ SECTIONS
     _sdata = .;        /* create a global symbol at data start */
     *(.data)           /* .data sections */
     *(.data*)          /* .data* sections */
+    *(.RamFunc)        /* HAL fast-program helper; startup copies with .data */
+    *(.RamFunc*)
 
     . = ALIGN(4);
     _edata = .;        /* define a global symbol at data end */

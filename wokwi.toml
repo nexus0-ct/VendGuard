@@ -2,4 +2,5 @@
 version = 1
 firmware = 'firmware/build/firmware.hex'
 elf = 'firmware/build/firmware.elf'
-rfc2217ServerPort = 4000
+rfc2217ServerPort = 4136
+vcdFile = 'docs/captures/lab3/vendguard-current.vcd'

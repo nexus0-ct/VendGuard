@@ -22,7 +22,7 @@ TARGET = firmware
 # debug build?
 DEBUG = 1
 # optimization
-OPT = -Og
+OPT = -Os
 
 
 #######################################
@@ -36,6 +36,9 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Logic/audit.c \
+Logic/cadence.c \
+Board/instrument.c \
 Logic/controller.c \
 Logic/event_log.c \
 Logic/impact.c \
@@ -114,7 +117,8 @@ AS_DEFS =
 # C defines
 C_DEFS =  \
 -DUSE_HAL_DRIVER \
--DSTM32C031xx
+-DSTM32C031xx \
+-DVG_BUILD_ID=\"$(shell python3 ../tools/source_id.py)\"
 
 
 # AS includes
@@ -135,7 +139,7 @@ C_INCLUDES =  \
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
 
-CFLAGS += $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+CFLAGS += $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections -fstack-usage -Wstack-usage=512
 
 ifeq ($(DEBUG), 1)
 CFLAGS += -g -gdwarf-2
@@ -155,10 +159,14 @@ LDSCRIPT = STM32C031C6Tx_FLASH.ld
 # libraries
 LIBS = -lc -lm -lnosys 
 LIBDIR = 
-LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections,--print-memory-usage
 
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
+
+.PHONY: FORCE
+FORCE:
+$(BUILD_DIR)/runtime.o: FORCE
 
 
 #######################################
@@ -205,3 +213,4 @@ clean:
 
 # Keep warnings strict for application code without modifying ST sources.
 $(addprefix $(BUILD_DIR)/,board.o runtime.o mpu6050.o event_log.o impact.o controller.o): CFLAGS += -Wextra -Werror
+$(addprefix $(BUILD_DIR)/,audit.o cadence.o instrument.o): CFLAGS += -Wextra -Werror

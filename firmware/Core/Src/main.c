@@ -24,6 +24,7 @@
 
 #include <stdio.h>
 #include "board.h"
+#include "instrument.h"
 
 /* USER CODE END Includes */
 
@@ -68,12 +69,7 @@ static void MX_USART2_UART_Init(void);
 
 int __io_putchar(int ch)
 {
-  uint8_t byte = (uint8_t)ch;
-  if (HAL_UART_Transmit(&huart2, &byte, 1, HAL_MAX_DELAY) != HAL_OK)
-  {
-    return EOF;
-  }
-  return ch;
+  return board_console_putchar(ch);
 }
 
 /* USER CODE END 0 */
@@ -85,7 +81,7 @@ int __io_putchar(int ch)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  vg_stack_paint();
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -101,7 +97,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+  vg_clock_init();
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -312,7 +308,7 @@ static void MX_GPIO_Init(void)
 
   /* PIR digital input and ADC timing marker. */
   GPIO_InitStruct.Pin = PIR_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(PIR_GPIO_Port, &GPIO_InitStruct);
   HAL_GPIO_WritePin(ADC_SAMPLE_GPIO_Port, ADC_SAMPLE_Pin, GPIO_PIN_RESET);

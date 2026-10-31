@@ -150,6 +150,7 @@ void EXTI4_15_IRQHandler(void)
 
   /* USER CODE END EXTI4_15_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(User_Button_Pin);
+  HAL_GPIO_EXTI_IRQHandler(PIR_Pin);
   /* USER CODE BEGIN EXTI4_15_IRQn 1 */
 
   /* USER CODE END EXTI4_15_IRQn 1 */

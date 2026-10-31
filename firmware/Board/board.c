@@ -1,10 +1,16 @@
 #include "board.h"
 #include "main.h"
+#include "instrument.h"
 extern ADC_HandleTypeDef hadc1;
 extern I2C_HandleTypeDef hi2c1;
 extern UART_HandleTypeDef huart2;
 static volatile uint8_t console_head, console_tail;
 static char console_rx[64];
+static uint32_t console_stamp[64];
+static volatile uint32_t rx_dropped, rx_overrun, pir_dropped;
+static uint32_t tx_timeouts, tx_errors;
+static uint32_t pir_edges[16];
+static volatile uint8_t pir_in, pir_out;
 /* RM0490 I2C: program CR2 in one write, avoiding intermediate START states. */
 static void wire_pause(void)
 {
@@ -94,21 +100,66 @@ void board_console_start(void)
   HAL_NVIC_EnableIRQ(USART2_IRQn);
   __HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
 }
+int board_console_putchar(int ch)
+{
+  uint8_t byte = (uint8_t)ch;
+  /* A missing TC must not hold the foreground forever. HAL uses a strict
+   * tick difference > timeout, so 2 ticks can span up to about 3 ms. */
+  HAL_StatusTypeDef status = HAL_UART_Transmit(&huart2,&byte,1,2U);
+  if (status != HAL_OK) {
+    if (status == HAL_TIMEOUT) ++tx_timeouts;
+    else ++tx_errors;
+    /* HAL's TX timeout also disables RXNEIE. Our RX ISR must keep running. */
+    __HAL_UART_ENABLE_IT(&huart2,UART_IT_RXNE);
+    return -1;
+  }
+  return ch;
+}
+void board_tx_stats(uint32_t *timeouts, uint32_t *errors)
+{ *timeouts = tx_timeouts; *errors = tx_errors; }
 void board_console_irq(void)
 {
   uint32_t flags = USART2->ISR;
   if (flags & USART_ISR_RXNE_RXFNE) {
     char ch = (char)USART2->RDR;
     uint8_t next = (uint8_t)((console_head + 1U) % sizeof(console_rx));
-    if (next != console_tail) { console_rx[console_head] = ch; console_head = next; }
+    if (next != console_tail) {
+      console_rx[console_head] = ch; console_stamp[console_head] = vg_now(); console_head = next;
+    } else ++rx_dropped;
   }
+  if (flags & USART_ISR_ORE) ++rx_overrun;
   USART2->ICR = USART_ICR_ORECF | USART_ICR_NECF | USART_ICR_FECF | USART_ICR_PECF;
 }
 bool board_console_byte(char *ch)
 {
+  uint32_t unused; return board_console_timed(ch,&unused);
+}
+bool board_console_timed(char *ch, uint32_t *us)
+{
   if (console_head == console_tail) return false;
   *ch = console_rx[console_tail];
+  *us = console_stamp[console_tail];
   console_tail = (uint8_t)((console_tail + 1U) % sizeof(console_rx));
   return true;
+}
+void HAL_GPIO_EXTI_Rising_Callback(uint16_t pin)
+{
+  if (pin != PIR_Pin) return;
+  uint8_t next = (uint8_t)((pir_in+1U)%16U);
+  if (next == pir_out) { ++pir_dropped; return; }
+  pir_edges[pir_in] = vg_now(); pir_in = next;
+}
+bool board_customer_event(uint32_t *us)
+{
+  if (pir_in == pir_out) return false;
+  *us = pir_edges[pir_out]; pir_out = (uint8_t)((pir_out+1U)%16U); return true;
+}
+void board_rx_stats(uint32_t *dropped, uint32_t *overrun, uint32_t *edges)
+{ *dropped = rx_dropped; *overrun = rx_overrun; *edges = pir_dropped; }
+void board_console_discard(void)
+{
+  uint32_t mask = __get_PRIMASK(); __disable_irq();
+  console_tail = console_head;
+  __set_PRIMASK(mask);
 }
 void board_heartbeat(void) { HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin); }
