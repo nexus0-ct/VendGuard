@@ -6,3 +6,4 @@ tests/build/
 tests/coverage/
 *.gcov
 __pycache__/
+docs/captures/lab3/vendguard-current.vcd
