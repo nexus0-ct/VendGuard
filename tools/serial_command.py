@@ -9,7 +9,7 @@ import serial
 parser = argparse.ArgumentParser()
 parser.add_argument("command")
 parser.add_argument("--output", required=True)
-parser.add_argument("--port", type=int, default=4000)
+parser.add_argument("--port", type=int, default=4136)
 parser.add_argument("--seconds", type=float, default=2)
 args = parser.parse_args()
 if args.seconds <= 0:
