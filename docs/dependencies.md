@@ -1,5 +1,13 @@
 # Залежності прошивки
 
+## Поточна збірка ЛР3
+
+Використовується окремий образ `vendguard-build:lab3`, Ubuntu 24.04 за digest у Dockerfile, ARM GCC 13.2.1, binutils 2.42 та newlib 4.4.0. Версії пакетів зафіксовано. `-Os`, `-fstack-usage`, `-Wstack-usage=512`, map і `--print-memory-usage` входять до звичайної збірки. Точні виходи зберігаються в `metrics/lab3/`.
+
+HAL/CMSIS та власний драйвер MPU продовжують ЛР2 без заміни MCU. TIM3 налаштовано через регістри device header, нова TIM HAL бібліотека не потрібна. DMA/RTC не застосовуються. FLASH HAL виконує program/erase, власний адаптер перевіряє стирання та readback. Джерела/ліцензії vendor не змінено.
+
+## Історичне середовище ЛР2
+
 Основа ЛР1: 8056a0f. STM32C0 HAL 1.0.1 і CMSIS збережено без змін із ліцензіями. ADC/ADCEx/LL_ADC тієї самої HAL 1.0.1 взято з офіційного ST tag v1.0.1, commit 24999b605d0b9da3e4675c4c884036ae724bb59f.
 
 ADC потрібен для LDR; I²C для MPU; UART для протоколу; GPIO для PIR/LED/маркера; RCC/FLASH/PWR/CORTEX для старту й SysTick. EXTI залишається для бортової кнопки. DMA потрібний для типів HAL I²C/UART, transfers DMA не виконуються. SPI/TIM/RTC не ввімкнено.
