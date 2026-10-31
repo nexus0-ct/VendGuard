@@ -1,0 +1,62 @@
+{
+  "scenario": "S1",
+  "requested_wall_seconds": 60,
+  "build_expected": "vg3-eed2dae477f4fd8f",
+  "runner_sha256": "c652cc9471e0ee9806a11974353d6acbdb27845edf0d7f53d756215db56ad6ec",
+  "uart_parser_sha256": "72d78d293a15e3a04fd5c50a5b080f64cdca34b89152539bffb3c2b535e15471",
+  "started_utc": "2026-10-29T09:22:03.820718+00:00",
+  "source_head": "669317fb67c27c9d1480b4d1b8199a55e35657ca",
+  "port": 4136,
+  "seed": 36,
+  "commands": [
+    {
+      "host_elapsed_s": 0.39639908300000004,
+      "ascii": "version"
+    },
+    {
+      "host_elapsed_s": 1.4058831250000001,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2.4242730409999997,
+      "ascii": "telemetry 0"
+    },
+    {
+      "host_elapsed_s": 2.633678916,
+      "ascii": "measure on"
+    },
+    {
+      "host_elapsed_s": 65.90062520800001,
+      "ascii": ""
+    },
+    {
+      "host_elapsed_s": 66.433578541,
+      "ascii": "stats"
+    },
+    {
+      "host_elapsed_s": 70.47212350000001,
+      "ascii": "memory"
+    },
+    {
+      "host_elapsed_s": 70.793329458,
+      "ascii": "verify"
+    },
+    {
+      "host_elapsed_s": 71.803713833,
+      "ascii": "durable"
+    }
+  ],
+  "development_short": false,
+  "s3_mean_burst_interval_s": null,
+  "s3_status_count": null,
+  "boundary_fixed_burst": null,
+  "note": "Host time schedules stimuli only. Timing results must use MCU timestamps/VCD.",
+  "measurement_windows_us": [
+    63796442
+  ],
+  "endurance_adequate": true,
+  "completed": true,
+  "elapsed_wall_seconds": 77.125818291,
+  "log_sha256": "72a269070667944e3346afd5657395fd80bebeb1d59f5015a5f19b1e33a0e6d4",
+  "finished_utc": "2026-10-29T09:23:20.561141+00:00"
+}

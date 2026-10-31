@@ -1,0 +1,1042 @@
+{
+  "scenario": "S2",
+  "requested_wall_seconds": 3660.0,
+  "build_expected": "vg3-eed2dae477f4fd8f",
+  "runner_sha256": "c652cc9471e0ee9806a11974353d6acbdb27845edf0d7f53d756215db56ad6ec",
+  "uart_parser_sha256": "72d78d293a15e3a04fd5c50a5b080f64cdca34b89152539bffb3c2b535e15471",
+  "started_utc": "2026-10-29T09:23:49.900175+00:00",
+  "source_head": "669317fb67c27c9d1480b4d1b8199a55e35657ca",
+  "port": 4136,
+  "seed": 36,
+  "commands": [
+    {
+      "host_elapsed_s": 0.392194125,
+      "ascii": "version"
+    },
+    {
+      "host_elapsed_s": 1.4358443749999998,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2.453745792,
+      "ascii": "telemetry 1"
+    },
+    {
+      "host_elapsed_s": 2.669659834,
+      "ascii": "measure on"
+    },
+    {
+      "host_elapsed_s": 2.885603125,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 17.957798874999998,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 32.956267875,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 47.922797375,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 62.921003792,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 77.885677709,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 92.921152292,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 107.946262709,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 122.961718042,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 137.99317762500002,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 152.968177209,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 167.98468395900002,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 182.96777604200003,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 197.894596459,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 212.93448533400002,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 227.963842792,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 242.902190584,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 257.900387209,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 272.923352042,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 287.948523875,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 302.98836341699996,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 317.910782834,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 332.888219334,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 347.888035792,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 362.981830459,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 377.890144959,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 392.920748792,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 407.896054792,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 422.970435834,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 437.961194,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 452.98646325,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 467.991225417,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 482.973587959,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 497.98512825,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 512.967728417,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 527.893738417,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 542.8981080000001,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 557.954299417,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 572.976992084,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 587.983727959,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 602.9792829170001,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 617.890184125,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 632.9507329170001,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 647.9335755840001,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 662.9515045420001,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 677.979638917,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 692.989285084,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 707.99062425,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 722.934491584,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 737.9412469590001,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 752.9050103750001,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 767.936274,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 782.9235526250001,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 797.9501663750001,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 812.9472839590001,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 827.9440837090001,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 842.944661417,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 857.938191875,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 872.97720625,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 887.985841334,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 902.9777687090001,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 917.985619542,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 932.96615375,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 947.9521007090001,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 962.942348542,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 977.9437575840001,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 992.945427792,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1007.9475714590001,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1022.942087459,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1037.947842375,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1052.9344260839998,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1067.9665392919999,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1082.9738292499999,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1097.950623834,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1112.965030875,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1127.95858325,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1142.9655357919999,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1157.990045417,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1172.9165048339999,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1187.9246846249998,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1202.9916007089998,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1217.9327503749998,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1232.9508825419998,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1247.9629587499999,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1262.9739179169999,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1277.9916196249999,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1292.937243125,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1307.956890709,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1322.950010709,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1337.9514153339999,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1352.987257084,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1367.8973475,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1382.962551167,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1397.99029275,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1412.905955084,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1427.9122581249999,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1442.9515899589999,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1457.952526667,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1472.9594977919999,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1487.9397032499999,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1502.952397542,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1517.9806597089998,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1532.8989428749999,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1547.8856637499998,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1562.96520225,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1577.959416042,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1592.9782337919999,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1607.912099709,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1622.9259319999999,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1637.929482667,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1652.9158957089999,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1667.957537042,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1682.915643667,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1697.937188167,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1712.909108292,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1727.970268584,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1742.907350584,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1757.8936483339999,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1772.9868655,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1787.9312722089999,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1802.977943417,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1817.886079459,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1832.964348042,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1847.888346167,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1862.9785354169999,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1877.98690675,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1892.905366042,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1907.993530084,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1922.982317459,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1937.985005709,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 1952.979722959,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 1967.910174959,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 1982.988016042,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 1997.9265606249999,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2012.912430917,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2027.9373395,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2042.94366025,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2057.914606625,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2072.9623404169997,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2087.975551292,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2102.981438834,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2117.97590975,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2132.887838625,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2147.892261959,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2162.915980875,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2177.935043459,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2192.932342167,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2207.963500709,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2222.979082292,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2237.898331709,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2252.936087875,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2267.918334959,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2282.992741125,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2297.9803053749997,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2312.898181292,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2327.922007917,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2342.942537292,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2357.9862427919998,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2372.979670209,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2387.978125917,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2402.987282084,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2417.909736042,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2432.9246790839998,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2447.9052376669997,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2462.967068167,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2477.964905417,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2492.930544625,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2507.920080167,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2522.961831959,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2537.886470334,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2552.904248917,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2567.915744,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2582.907873417,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2597.994842959,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2612.971487209,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2627.9887506249997,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2642.914158167,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2657.920393459,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2672.926467917,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2687.955344917,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2702.910269042,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2717.91958075,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2732.932651792,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2747.974267,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2762.938738792,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2777.9468040419997,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2792.913010167,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2807.977272917,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2822.971296875,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2837.9762273339998,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2852.891474167,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2867.9198244589998,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2882.935023209,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2897.943219667,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2912.886846334,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2927.956997959,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 2942.920534792,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 2957.9277093749997,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 2972.9656811669997,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 2987.913645917,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3002.908032875,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3017.9152315,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3032.906802459,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3047.902408959,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3062.989964834,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3077.981417209,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3092.93966775,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3107.925968959,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3122.955956667,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3137.94961625,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3152.920936167,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3167.90870125,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3182.973037917,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3197.973982792,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3212.891986667,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3227.894920459,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3242.984341209,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3257.968055584,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3272.90961175,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3287.897041792,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3302.920929209,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3317.933723,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3332.954190042,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3347.910742125,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3362.945660042,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3377.949057167,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3392.9139810839997,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3407.973069875,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3422.953193084,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3437.950061709,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3452.958644042,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3467.957032625,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3482.977423709,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3497.959281209,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3512.968004917,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3527.983710792,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3542.898813542,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3557.990278084,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3572.98218375,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3587.893236584,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3602.976405167,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3617.9762473749997,
+      "ascii": "status"
+    },
+    {
+      "host_elapsed_s": 3632.964602125,
+      "ascii": "guard"
+    },
+    {
+      "host_elapsed_s": 3647.972694792,
+      "ascii": "probe"
+    },
+    {
+      "host_elapsed_s": 3662.98391325,
+      "ascii": "service"
+    },
+    {
+      "host_elapsed_s": 3667.848232834,
+      "ascii": ""
+    },
+    {
+      "host_elapsed_s": 3668.38680475,
+      "ascii": "stats"
+    },
+    {
+      "host_elapsed_s": 3672.414348,
+      "ascii": "memory"
+    },
+    {
+      "host_elapsed_s": 3672.740080834,
+      "ascii": "verify"
+    },
+    {
+      "host_elapsed_s": 3673.793427584,
+      "ascii": "durable"
+    }
+  ],
+  "development_short": false,
+  "s3_mean_burst_interval_s": null,
+  "s3_status_count": null,
+  "boundary_fixed_burst": null,
+  "note": "Host time schedules stimuli only. Timing results must use MCU timestamps/VCD.",
+  "measurement_windows_us": [
+    3665642537
+  ],
+  "endurance_adequate": true,
+  "completed": true,
+  "elapsed_wall_seconds": 3678.1044014169997,
+  "log_sha256": "f10fe6bcf5ee84bc83b13445731af533f5eb53f17ff2ec538e8de35b3f6fcd0e",
+  "finished_utc": "2026-10-29T10:25:07.636879+00:00"
+}

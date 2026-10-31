@@ -1,0 +1,44 @@
+VG VERSION build=vg3-eed2dae477f4fd8f
+VG DONE op=version t_us=10069715
+VG STATUS ms=11074 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG DONE op=status t_us=11090778
+VG DONE op=telemetry 0 t_us=12091242
+VG MEASURE start
+VG METRICS build=vg3-eed2dae477f4fd8f elapsed_us=63796442 task_load_permille=137 busy_spin=1 clock=TIM3_1MHz
+STAT name=console n=58517 min_us=146 avg_us=163 max_us=193
+SCHED name=console skipped=5278 deadline_miss=1503 jitter_min_us=-666 jitter_max_us=2231 release_late_max_us=2529
+JITTER name=console n=58517 avg_us=90 abs_le10=2061 abs_le100=28349 abs_le1000=24592 abs_gt1000=3515
+STAT name=customer n=12759 min_us=134 avg_us=153 max_us=168
+SCHED name=customer skipped=0 deadline_miss=0 jitter_min_us=-2299 jitter_max_us=2287 release_late_max_us=2543
+JITTER name=customer n=12758 avg_us=0 abs_le10=1148 abs_le100=3837 abs_le1000=6556 abs_gt1000=1217
+STAT name=mechanical n=6379 min_us=1232 avg_us=1251 max_us=1269
+SCHED name=mechanical skipped=0 deadline_miss=0 jitter_min_us=-976 jitter_max_us=1065 release_late_max_us=1422
+JITTER name=mechanical n=6378 avg_us=0 abs_le10=567 abs_le100=1630 abs_le1000=4180 abs_gt1000=1
+STAT name=light n=3189 min_us=221 avg_us=243 max_us=254
+SCHED name=light skipped=0 deadline_miss=0 jitter_min_us=-2437 jitter_max_us=2257 release_late_max_us=2453
+JITTER name=light n=3188 avg_us=0 abs_le10=281 abs_le100=801 abs_le1000=1551 abs_gt1000=555
+STAT name=recovery n=63 min_us=139 avg_us=150 max_us=162
+SCHED name=recovery skipped=0 deadline_miss=0 jitter_min_us=-2495 jitter_max_us=2500 release_late_max_us=2539
+JITTER name=recovery n=62 avg_us=36 abs_le10=3 abs_le100=5 abs_le1000=37 abs_gt1000=17
+STAT name=audit n=57932 min_us=135 avg_us=152 max_us=169
+SCHED name=audit skipped=5863 deadline_miss=2208 jitter_min_us=-673 jitter_max_us=2210 release_late_max_us=2515
+JITTER name=audit n=57931 avg_us=101 abs_le10=1100 abs_le100=23268 abs_le1000=28402 abs_gt1000=5161
+STAT name=telemetry n=127 min_us=130 avg_us=150 max_us=157
+SCHED name=telemetry skipped=0 deadline_miss=0 jitter_min_us=-2522 jitter_max_us=2321 release_late_max_us=2527
+JITTER name=telemetry n=126 avg_us=-14 abs_le10=2 abs_le100=8 abs_le1000=49 abs_gt1000=67
+STAT name=heartbeat n=63 min_us=140 avg_us=151 max_us=159
+SCHED name=heartbeat skipped=0 deadline_miss=0 jitter_min_us=-2459 jitter_max_us=2444 release_late_max_us=2514
+JITTER name=heartbeat n=62 avg_us=-6 abs_le10=3 abs_le100=5 abs_le1000=20 abs_gt1000=34
+STAT name=loop n=192617 min_us=153 avg_us=313 max_us=2679
+STAT name=loop_interval n=192617 min_us=170 avg_us=331 max_us=2697
+STAT name=pir_latency n=0 min_us=0 avg_us=0 max_us=0
+STAT name=command_latency n=0 min_us=0 avg_us=0 max_us=0
+STAT name=command_complete_latency n=0 min_us=0 avg_us=0 max_us=0
+STAT name=clock_read n=256 min_us=9 avg_us=10 max_us=12
+COUNTERS rx_dropped=0 rx_overrun=0 pir_dropped=0 audit_dropped=0 audit_failed=1 audit_queued=2 tx_timeouts=0 tx_errors=0
+MEM stack_used=968 stack_reserve=2048 heap_arena=1032 heap_used=1032 heap_free=0
+MEM stack_used=968 stack_reserve=2048 heap_arena=1032 heap_used=1032 heap_free=0
+VG DONE op=memory t_us=80150339
+VG VERIFY readable=1 valid=0 damaged=128 latest=0
+VG DONE op=verify t_us=80475702
+VG DONE op=durable t_us=81478225

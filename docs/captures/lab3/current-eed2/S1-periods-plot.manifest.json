@@ -1,0 +1,21 @@
+{
+  "source_name": "S1-periods.vcd",
+  "source_sha256": "df6d81381ec2f6d55c1a601551643e3d71389f0294c65a3e554657013ba45c86",
+  "plotter_sha256": "70ed755add58f260f365dee42d69110c4deff6cb93b5f6d29a8248ac0464a703",
+  "start_us": 14500000.0,
+  "end_us": 14600000.0,
+  "channels": [
+    "MPU_TASK",
+    "ADC_SAMPLE"
+  ],
+  "known_levels_before_window": {},
+  "transitions_in_window": {
+    "MPU_TASK": 21,
+    "ADC_SAMPLE": 11
+  },
+  "outputs_sha256": {
+    "S1-periods-plot.png": "a2fbc746d75f15c20da4a7ccdbc5475f8620d5f27fa7776eff586c2c10a66e8e",
+    "S1-periods-plot.svg": "ab40c8950d3e38f4ddca7c2da579bf1620d5a6e3b1c07be0c5840b895a43c659"
+  },
+  "note": "Derived scientific plot of real VCD. Unknown initial levels are NaN; time axis is relative to the labelled original window."
+}

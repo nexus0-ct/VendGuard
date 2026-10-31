@@ -1,0 +1,25 @@
+{
+  "source_name": "S3-worst-PIR.vcd",
+  "source_sha256": "b7bafd04e46ece194b549a77cdc2cc443435d287aae0b5bf515ab15d42dbbe6b",
+  "plotter_sha256": "70ed755add58f260f365dee42d69110c4deff6cb93b5f6d29a8248ac0464a703",
+  "start_us": 124667007.725,
+  "end_us": 125376245.65,
+  "channels": [
+    "PIR",
+    "CUSTOMER_RESPONSE",
+    "MPU_TASK",
+    "UART_TX"
+  ],
+  "known_levels_before_window": {},
+  "transitions_in_window": {
+    "PIR": 2,
+    "CUSTOMER_RESPONSE": 3,
+    "MPU_TASK": 15,
+    "UART_TX": 36111
+  },
+  "outputs_sha256": {
+    "S3-worst-PIR-plot.png": "08090b9f3d1d2708f566c2bbc1d299dd0e4222a7fb81320c273089aa659df594",
+    "S3-worst-PIR-plot.svg": "33246d793bcdb6ef4d816c9f117ddee1df157b639b7ee33b161642dd4f062916"
+  },
+  "note": "Derived scientific plot of real VCD. Unknown initial levels are NaN; time axis is relative to the labelled original window."
+}

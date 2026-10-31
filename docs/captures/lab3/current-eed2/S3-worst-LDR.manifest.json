@@ -1,0 +1,16 @@
+{
+  "source_name": "eed2-S3-LDR-20261029.vcd",
+  "source_sha256": "667ad58ec2afe788b44a7520d0c09be0a041a0bd132fbec4f1d85ed86efa5b02",
+  "extractor_sha256": "3a8ec69979a64140a80023b1cd44d5fcc610d6e630024d5570c9ec6fa6fd27d7",
+  "excerpt_sha256": "8ce384a1c622642d4dee9cc83df73d6cb39597d2985511f413382814918d7d27",
+  "start_ns": 225964020625,
+  "end_ns": 227138039750,
+  "original_events_copied": 38699,
+  "channels": [
+    "UART_TX",
+    "ADC_SAMPLE",
+    "LDR_DO"
+  ],
+  "unknown_at_start": [],
+  "note": "Derived selection, not a new raw measurement. No transitions invented inside the window; absolute time is unchanged."
+}

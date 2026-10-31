@@ -1,0 +1,96 @@
+{
+  "build": "vg3-eed2dae477f4fd8f",
+  "elf_sha256": "b6681b1a211dcd06cc175925fb4d651db004903671e63df4c761d41684c46ca0",
+  "pir_inside_export": {
+    "n": 32,
+    "min_us": 19045.325,
+    "avg_us": 316758.8859375,
+    "max_us": 609237.925,
+    "p99_us": 609237.925
+  },
+  "light_notification": {
+    "n": 32,
+    "min_us": 403492.075000003,
+    "avg_us": 626158.3453125001,
+    "max_us": 1074019.125,
+    "p99_us": 1074019.125
+  },
+  "light_sample_lower": {
+    "n": 32,
+    "min_us": 401742.375,
+    "avg_us": 624396.5429687493,
+    "max_us": 1072247.375,
+    "p99_us": 1072247.375
+  },
+  "light_verdicts": {
+    "violated_by_sample_lower_bound": 19,
+    "met_by_notification_upper_bound": 13
+  },
+  "impact_counts": {
+    "S3-A": 12,
+    "S3-B": 15,
+    "S3-MPU-extra": 4
+  },
+  "export_span": {
+    "n": 402,
+    "min_us": 619576.9305555573,
+    "avg_us": 629428.7253938578,
+    "max_us": 644125.405555542,
+    "p99_us": 641856.555555542
+  },
+  "export_wire_min": {
+    "n": 402,
+    "min_us": 468142.3611111111,
+    "avg_us": 473428.4307628516,
+    "max_us": 481770.8333333333,
+    "p99_us": 481597.22222222225
+  },
+  "export_extra_percent": {
+    "min": 32.07857586972649,
+    "avg": 32.95063380926264,
+    "max": 33.98156292930845
+  },
+  "sources": {
+    "S1": {
+      "analysis_sha256": "cb678abd314cf6feda4983b4bfe2e29a573d84de6749fbb7b233b235df069a77",
+      "uart_sha256": "72a269070667944e3346afd5657395fd80bebeb1d59f5015a5f19b1e33a0e6d4",
+      "vcd_sha256": "cc21c0b6563260877811c325d29bf402e1fe2234384bcc893989e493a8b5c3f9"
+    },
+    "S2": {
+      "analysis_sha256": "530a65cf72a92e8cd8b81aa22f025b978bfadd23db7bc550f124d16de0275f02",
+      "uart_sha256": "f10fe6bcf5ee84bc83b13445731af533f5eb53f17ff2ec538e8de35b3f6fcd0e",
+      "vcd_sha256": "0ea11d5be2f7c76eb51ad029d27286c992f412a054b18cb739efe8f8ca93ca27"
+    },
+    "S3-A": {
+      "analysis_sha256": "1a926a16bcd2d2f525ccc3baf484c1d291d6032c5fb95eebd6b5540f65f820cb",
+      "uart_sha256": "4f87789944f4496b1b54c73f9cda1fea3fa1c73a5c556ad642e764b3037d6cf7",
+      "vcd_sha256": "c655fead5b81d489735bbdc5eea451279651d60881f4e31843d697a2d5b8c113"
+    },
+    "S3-B": {
+      "analysis_sha256": "13d399298673c5a0be7ec77d337bd6c4bbdba98b2bb333fab632f339167edc2b",
+      "uart_sha256": "914c762c502fadeddfabd3ae6a49ef7688de473d270ae7931fda2419d296c6e5",
+      "vcd_sha256": "78b790b02d13a7b5021394d326cd42db48c78de88da171a9d9d5f30b1e83b80d"
+    },
+    "S3-LDR": {
+      "analysis_sha256": "6bf1e2da095b35d0e032c62577782b7a3360d7efe535ba116e6daf1f8fea344f",
+      "uart_sha256": "65c27a9d1c2b728c40411cd6ac6ecb74833f14aea26b8c46a3e1251678b3eba6",
+      "vcd_sha256": "667ad58ec2afe788b44a7520d0c09be0a041a0bd132fbec4f1d85ed86efa5b02"
+    },
+    "S3-LDR-extra": {
+      "analysis_sha256": "50f5d5fc8839e5ff4f6cca4a91558586e9adc0851cac92dc9d7d431b573e2e18",
+      "uart_sha256": "f416fe2ae8936d20b380fca2953400642c29a83b9366745589298af0b978822c",
+      "vcd_sha256": "b8f7d1732416c61b4f8130a0be18e99c3085b34bb894853c2ed895f1d7a3b8ab"
+    },
+    "S3-MPU-extra": {
+      "analysis_sha256": "931d30449a6f9d7c17878765ffe4b4669e07ff491a8cf6aad4f16350bace337f",
+      "uart_sha256": "fba054a65edd11287a7c22bcbe5699dc2ca43f7ef49abbca7c171198ec15b25b",
+      "vcd_sha256": "f6ccef40a8cde65bf2759682fbc41e2f515531ebdbece7b3a9e774de2fe1c10a"
+    },
+    "fault-parallel": {
+      "analysis_sha256": "764b1fa22a762d2592a942a3c44ae2df0728d0cbfe42ff39bbb4859e55fad601",
+      "uart_sha256": "3342d3aa107d570801402c95a02d4a1c9123c2c5df73a6e4acb55eced29f453f",
+      "vcd_sha256": "1b90bd39681ef1a43ff28228404028a54f6040dd1c0f87896d036e1fdf622328"
+    }
+  },
+  "scope": "Separate measurement windows; only in-window trials combined. MCU averages are never merged. Counts describe received notifications, not a physical latency bound."
+}

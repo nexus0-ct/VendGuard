@@ -1,0 +1,23 @@
+{
+  "source_name": "S3-worst-LDR.vcd",
+  "source_sha256": "8ce384a1c622642d4dee9cc83df73d6cb39597d2985511f413382814918d7d27",
+  "plotter_sha256": "70ed755add58f260f365dee42d69110c4deff6cb93b5f6d29a8248ac0464a703",
+  "start_us": 225964020.625,
+  "end_us": 227138039.75,
+  "channels": [
+    "LDR_DO",
+    "ADC_SAMPLE",
+    "UART_TX"
+  ],
+  "known_levels_before_window": {},
+  "transitions_in_window": {
+    "LDR_DO": 2,
+    "ADC_SAMPLE": 55,
+    "UART_TX": 38645
+  },
+  "outputs_sha256": {
+    "S3-worst-LDR-plot.png": "5e51f492ba68361cc75fb732fedea9760b620af12d306b381216cc7f4b69631f",
+    "S3-worst-LDR-plot.svg": "4ab207e86c96cf8b1ee84f1d6efa7abc5343b1c7c62bf8d54a055cec124712ce"
+  },
+  "note": "Derived scientific plot of real VCD. Unknown initial levels are NaN; time axis is relative to the labelled original window."
+}

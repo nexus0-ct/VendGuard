@@ -1,0 +1,15 @@
+{
+  "source_name": "eed2-S1-20261029.vcd",
+  "source_sha256": "cc21c0b6563260877811c325d29bf402e1fe2234384bcc893989e493a8b5c3f9",
+  "extractor_sha256": "3a8ec69979a64140a80023b1cd44d5fcc610d6e630024d5570c9ec6fa6fd27d7",
+  "excerpt_sha256": "df6d81381ec2f6d55c1a601551643e3d71389f0294c65a3e554657013ba45c86",
+  "start_ns": 14500000000,
+  "end_ns": 14600000000,
+  "original_events_copied": 30,
+  "channels": [
+    "ADC_SAMPLE",
+    "MPU_TASK"
+  ],
+  "unknown_at_start": [],
+  "note": "Derived selection, not a new raw measurement. No transitions invented inside the window; absolute time is unchanged."
+}
