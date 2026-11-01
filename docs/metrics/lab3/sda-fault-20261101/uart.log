@@ -1,0 +1,118 @@
+VG VERSION build=vg3-eed2dae477f4fd8f
+VG DONE op=version t_us=9539258
+VG DONE op=telemetry 1 t_us=9545618
+VG STATUS ms=9551 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG DONE op=status t_us=9568231
+VG STATUS ms=9577 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=10078 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=10578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=11078 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=11578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=12079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=12579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=13079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=13579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=14077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=14577 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=15077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=15577 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=16077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=16577 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=17077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=17579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=18079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=18577 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=19077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=19579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=20079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=20577 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=21078 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=21576 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=22076 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=22578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=23077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=23579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=24079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=24578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=25077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=25577 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=26079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=26579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=27079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=27579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=28078 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=28577 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=29077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=29579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=30079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=30578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=31077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=31578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=32079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=32578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=33076 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=33578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=34077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=34579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=35077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=35576 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=36079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG STATUS ms=36579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=2 overwritten=0
+VG EVENT seq=3 ms=36667 category=FAULT source=MPU6050 event=MPU_FAILED value=2
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=TIMEOUT
+VG STATUS ms=37088 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG STATUS ms=37577 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=TIMEOUT
+VG STATUS ms=38088 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG STATUS ms=38578 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=TIMEOUT
+VG STATUS ms=39088 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG STATUS ms=39576 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=TIMEOUT
+VG STATUS ms=40087 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG STATUS ms=40577 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=TIMEOUT
+VG STATUS ms=41088 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG STATUS ms=41577 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=TIMEOUT
+VG STATUS ms=42088 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG STATUS ms=42578 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=TIMEOUT
+VG STATUS ms=43089 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG STATUS ms=43577 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=TIMEOUT
+VG STATUS ms=44088 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG STATUS ms=44578 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG STATUS ms=45076 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=TIMEOUT
+VG STATUS ms=45578 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=TIMEOUT
+VG STATUS ms=46088 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG STATUS ms=46577 mode=guard pir=0 adc=3938 adc_ok=1 imu=TIMEOUT ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG CHECK device=MPU6050 addr=0x68 id=0x68 result=OK
+VG STATUS ms=47086 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=3 overwritten=0
+VG EVENT seq=4 ms=47103 category=INFO source=MPU6050 event=MPU_RECOVERED value=0
+VG STATUS ms=47579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=4 overwritten=0
+VG STATUS ms=48076 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=0 light_ready=1 alarms=0 records=4 overwritten=0
+VG EVENT seq=5 ms=48097 category=INFO source=MPU6050 event=BACKGROUND_READY value=100
+VG STATUS ms=48579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=49076 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=49579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=50079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=50578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=51079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=51579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=52077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=52579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=53077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=53577 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=54077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=54579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=55079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=55579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=56079 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=56578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=57077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=57579 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=58077 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0
+VG STATUS ms=58578 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=5 overwritten=0

@@ -78,6 +78,8 @@ FR-12 задає номінал до однієї короткої команд�
 
 Адресний NACK: MPU_FAILED 10365 мс; PIR INFO 20732; LDR ALARM 23812; MPU_RECOVERED 30470; BACKGROUND_READY 31461. Інші канали працювали між fault/recovery. Зміна адреси 0x68→0x69 не є SDA stuck-low.
 
+Окремо 01.11.2026 на тому самому ELF виконано [модельне замикання SDA на землю](metrics/lab3/sda-fault-20261101/README.md). VCD показав безперервний LOW 10,074478 с; UART зафіксував MPU_FAILED, повторні TIMEOUT, потім MPU_RECOVERED і BACKGROUND_READY після звільнення. Це один дослід моделі, не фізична перевірка і не статистика повторів.
+
 30 незалежних reset: VCD-decoded BOOT/FIRST у всіх; від TIM3 перший LDR 42130, PIR initial check 49257, MPU 88260 мкс, min=avg=max детермінованої моделі. До першого UART heap=0 у всіх. Це не power-on latency і PIR check не означає motion latency. Повний direct RFC capture був лише для перших11, підсумок30 послідовно використовує VCD.
 
 ## Налагодження та непідтверджені властивості
