@@ -1,0 +1,6 @@
+VG VERSION build=vg3-eed2dae477f4fd8f
+VG DONE op=version t_us=11585232
+VG STATUS ms=11591 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=4 overwritten=0
+VG DONE op=status t_us=11608053
+VG PROBE addr=0x68 id=0x68 result=OK raw=000000004000 ax=0 ay=0 az=1000
+VG DONE op=probe t_us=11625023

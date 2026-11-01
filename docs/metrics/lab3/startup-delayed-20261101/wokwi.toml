@@ -1,0 +1,10 @@
+[wokwi]
+version = 1
+firmware = 'firmware.hex'
+elf = 'firmware.elf'
+rfc2217ServerPort = 4148
+vcdFile = 'startup-delay.vcd'
+
+[[chip]]
+name = 'imu-delay'
+binary = 'imu-delay.chip.wasm'

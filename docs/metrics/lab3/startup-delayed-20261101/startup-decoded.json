@@ -1,0 +1,136 @@
+{
+  "source": "startup-delay.vcd",
+  "source_sha256": "36149af69873ccb251c7671da38781c4e7538a06d4c7b47e8f51f709b0bfd4c8",
+  "decoder_sha256": "ec2e690cef53455dc6ca76defface5e4e7e2b469e03221d61889c25476b43bb2",
+  "baud_assumed": 115200,
+  "timescale_ns": 1,
+  "channels": {
+    "UART_TX": {
+      "bytes": 1478,
+      "lines": [
+        {
+          "start_ns": 5327475,
+          "end_ns": 12345580.555555556,
+          "text": "VG BOOT version=3 build=vg3-eed2dae477f4fd8f mode=guard timer=TIM3_1MHz"
+        },
+        {
+          "start_ns": 13013175,
+          "end_ns": 18196930.555555556,
+          "text": "MEM_STAGE stage=before_uart heap_arena=0 heap_used=0"
+        },
+        {
+          "start_ns": 30366200,
+          "end_ns": 35943930.55555555,
+          "text": "VG STORE available=1 valid=0 damaged=128 serial=0 boot=1"
+        },
+        {
+          "start_ns": 36940575,
+          "end_ns": 42228255.55555555,
+          "text": "VG CHECK device=MPU6050 addr=0x68 id=0x00 result=NACK"
+        },
+        {
+          "start_ns": 43637925,
+          "end_ns": 50945130.55555555,
+          "text": "VG EVENT seq=1 ms=2 category=FAULT source=MPU6050 event=MPU_FAILED value=1"
+        },
+        {
+          "start_ns": 52018525,
+          "end_ns": 58171505.55555555,
+          "text": "VG CHECK device=LDR_ADC result=READABLE counts=3938 t_us=48722"
+        },
+        {
+          "start_ns": 58939375,
+          "end_ns": 64326055.55555555,
+          "text": "VG CHECK device=PIR result=READABLE level=0 t_us=55848"
+        },
+        {
+          "start_ns": 64850900,
+          "end_ns": 76097105.55555555,
+          "text": "VG READY imu_hz=100 light_hz=50 pir_hz=200 log=64 commands=guard,service,status,probe,mpu68,mpu69,calibrate,journal"
+        },
+        {
+          "start_ns": 77852975,
+          "end_ns": 85727680.55555555,
+          "text": "MEM stack_used=808 stack_reserve=2048 heap_arena=1032 heap_used=1032 heap_free=0"
+        },
+        {
+          "start_ns": 87319525,
+          "end_ns": 91348730.55555555,
+          "text": "VG STORE result=FAILED readback_or_hal=1"
+        },
+        {
+          "start_ns": 1086855450,
+          "end_ns": 1092136105.5555556,
+          "text": "VG CHECK device=MPU6050 addr=0x68 id=0x00 result=NACK"
+        },
+        {
+          "start_ns": 1094980775,
+          "end_ns": 1102863030.5555556,
+          "text": "VG EVENT seq=2 ms=1090 category=INFO source=LDR_ADC event=LIGHT_READY value=3938"
+        },
+        {
+          "start_ns": 2087675100,
+          "end_ns": 2092955505.5555556,
+          "text": "VG CHECK device=MPU6050 addr=0x68 id=0x00 result=NACK"
+        },
+        {
+          "start_ns": 3090028475,
+          "end_ns": 3095123530.5555553,
+          "text": "VG CHECK device=MPU6050 addr=0x68 id=0x68 result=OK"
+        },
+        {
+          "start_ns": 3097679300,
+          "end_ns": 3101322155.5555553,
+          "text": "VG FIRST device=MPU6050 t_us=3094786"
+        },
+        {
+          "start_ns": 3102800700,
+          "end_ns": 3110586180.5555553,
+          "text": "VG EVENT seq=3 ms=3093 category=INFO source=MPU6050 event=MPU_RECOVERED value=0"
+        },
+        {
+          "start_ns": 4089008900,
+          "end_ns": 4097273155.5555553,
+          "text": "VG EVENT seq=4 ms=4083 category=INFO source=MPU6050 event=BACKGROUND_READY value=100"
+        },
+        {
+          "start_ns": 11583754750,
+          "end_ns": 11587545130.555555,
+          "text": "VG VERSION build=vg3-eed2dae477f4fd8f"
+        },
+        {
+          "start_ns": 11588211900,
+          "end_ns": 11591472655.555555,
+          "text": "VG DONE op=version t_us=11585232"
+        },
+        {
+          "start_ns": 11596895500,
+          "end_ns": 11610357480.555555,
+          "text": "VG STATUS ms=11591 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=4 overwritten=0"
+        },
+        {
+          "start_ns": 11611025425,
+          "end_ns": 11614197255.555555,
+          "text": "VG DONE op=status t_us=11608053"
+        },
+        {
+          "start_ns": 11620311250,
+          "end_ns": 11627336130.555555,
+          "text": "VG PROBE addr=0x68 id=0x68 result=OK raw=000000004000 ax=0 ay=0 az=1000"
+        },
+        {
+          "start_ns": 11627985725,
+          "end_ns": 11631053680.555555,
+          "text": "VG DONE op=probe t_us=11625023"
+        }
+      ],
+      "framing_errors": 0
+    },
+    "UART_RX": {
+      "bytes": 0,
+      "lines": [],
+      "framing_errors": 0
+    }
+  },
+  "note": "Digital VCD decoding with center-of-bit sampling, 8N1. Host arrival times are not used. Derived text is not an original serial capture."
+}

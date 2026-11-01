@@ -82,6 +82,8 @@ FR-12 задає номінал до однієї короткої команд�
 
 30 незалежних reset: VCD-decoded BOOT/FIRST у всіх; від TIM3 перший LDR 42130, PIR initial check 49257, MPU 88260 мкс, min=avg=max детермінованої моделі. До першого UART heap=0 у всіх. Це не power-on latency і PIR check не означає motion latency. Повний direct RFC capture був лише для перших11, підсумок30 послідовно використовує VCD.
 
+Окремий [старт із затримкою готовності тестової I²C-моделі](metrics/lab3/startup-delayed-20261101/README.md): адреса 0x68 до 3 с давала NACK, потім ACK і сталу вибірку 0/0/1g. VCD показав три NACK і перший ACK на 3,086635 с; UART із VCD містить MPU_FAILED 2 мс, FIRST 3094786 мкс, MPU_RECOVERED 3093 мс, BACKGROUND_READY 4083 мс. Це один запуск спрощеної моделі, не фізичний MPU.
+
 ## Налагодження та непідтверджені властивості
 
 У старому `vg3-f2a0e90d5be4bb01` GDB довів foreground у UART_WaitOnFlagUntilTimeout, TC=0, TXE=1, HAL_MAX_DELAY, за живих SysTick/TIM3. HardFault breakpoint не спрацював. Причина невстановленого TC у моделі невідома. Поточний board_console_putchar обмежує очікування двома HAL ticks і відновлює RXNEIE після timeout. За працюючого SysTick умова dt>2 дає близько3 мс, не універсальні2 мс. `_write` не передає помилку окремого putchar до printf. Нові S3 повернули повні stats, але довгий синхронний export продовжує затримувати сенсори.

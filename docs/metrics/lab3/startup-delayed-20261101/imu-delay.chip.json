@@ -1,0 +1,11 @@
+{
+  "name": "IMU delay test fixture",
+  "author": "VendGuard",
+  "pins": [
+    "VCC",
+    "GND",
+    "SCL",
+    "SDA"
+  ],
+  "controls": []
+}

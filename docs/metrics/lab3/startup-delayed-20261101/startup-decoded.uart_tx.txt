@@ -1,0 +1,23 @@
+VG BOOT version=3 build=vg3-eed2dae477f4fd8f mode=guard timer=TIM3_1MHz
+MEM_STAGE stage=before_uart heap_arena=0 heap_used=0
+VG STORE available=1 valid=0 damaged=128 serial=0 boot=1
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=NACK
+VG EVENT seq=1 ms=2 category=FAULT source=MPU6050 event=MPU_FAILED value=1
+VG CHECK device=LDR_ADC result=READABLE counts=3938 t_us=48722
+VG CHECK device=PIR result=READABLE level=0 t_us=55848
+VG READY imu_hz=100 light_hz=50 pir_hz=200 log=64 commands=guard,service,status,probe,mpu68,mpu69,calibrate,journal
+MEM stack_used=808 stack_reserve=2048 heap_arena=1032 heap_used=1032 heap_free=0
+VG STORE result=FAILED readback_or_hal=1
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=NACK
+VG EVENT seq=2 ms=1090 category=INFO source=LDR_ADC event=LIGHT_READY value=3938
+VG CHECK device=MPU6050 addr=0x68 id=0x00 result=NACK
+VG CHECK device=MPU6050 addr=0x68 id=0x68 result=OK
+VG FIRST device=MPU6050 t_us=3094786
+VG EVENT seq=3 ms=3093 category=INFO source=MPU6050 event=MPU_RECOVERED value=0
+VG EVENT seq=4 ms=4083 category=INFO source=MPU6050 event=BACKGROUND_READY value=100
+VG VERSION build=vg3-eed2dae477f4fd8f
+VG DONE op=version t_us=11585232
+VG STATUS ms=11591 mode=guard pir=0 adc=3938 adc_ok=1 imu=OK ax=0 ay=0 az=1000 calibrated=1 light_ready=1 alarms=0 records=4 overwritten=0
+VG DONE op=status t_us=11608053
+VG PROBE addr=0x68 id=0x68 result=OK raw=000000004000 ax=0 ay=0 az=1000
+VG DONE op=probe t_us=11625023
